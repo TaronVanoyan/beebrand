@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg fill="none" viewBox="0 0 82 82" xmlns="http://www.w3.org/2000/svg">
+    <g filter="url(#c)">
+        <mask id="a" fill="white">
+            <path d="m25.929 67.968-15.929-31 15.071-30.968 31 0.03197 15.929 31-15.071 30.968-31-0.032z"/>
+        </mask>
+        <path d="m25.929 67.968-0.8894 0.4571 0.2787 0.5423 0.6097 6e-4 1e-3 -1zm-15.929-31-0.89917-0.4376-0.21887 0.4498 0.22859 0.4449 0.88945-0.4571zm15.071-30.968 1e-3 -1-0.6262-6.4e-4 -0.274 0.56304 0.8992 0.4376zm31 0.03197 0.8894-0.45703-0.2787-0.54234-0.6097-6.3e-4 -1e-3 1zm15.929 31 0.8992 0.4376 0.2188-0.4498-0.2285-0.4449-0.8895 0.4571zm-15.071 30.968-1e-3 1 0.6262 6e-4 0.274-0.563-0.8992-0.4376zm-30.11-0.489-15.929-31-1.779 0.9141 15.929 31 1.7789-0.9141zm-15.919-30.105 15.071-30.968-1.7983-0.8752-15.071 30.968 1.7984 0.8752zm14.171-30.406 31 0.03197 0.0021-2-31-0.03197-0.0021 2zm30.112-0.511 15.929 31 1.779-0.9141-15.929-31-1.7789 0.91406zm15.919 30.105-15.071 30.968 1.7983 0.8752 15.071-30.968-1.7984-0.8752zm-14.171 30.406-31-0.032-0.0021 2 31 0.032 0.0021-2z"
+              fill="url(#b)" mask="url(#a)"/>
+    </g>
+    <defs>
+        <filter id="c" x="0" y="0" width="82" height="82" color-interpolation-filters="sRGB"
+                filterUnits="userSpaceOnUse">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feColorMatrix in="SourceAlpha" result="hardAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"/>
+            <feOffset dy="4"/>
+            <feGaussianBlur stdDeviation="5"/>
+            <feComposite in2="hardAlpha" operator="out"/>
+            <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+            <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_234:424"/>
+            <feBlend in="SourceGraphic" in2="effect1_dropShadow_234:424" result="shape"/>
+        </filter>
+        <linearGradient id="b" x1="112.67" x2="10.077" y1="68" y2="68.127" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF8008" offset="0"/>
+            <stop stop-color="#FFC837" offset="1"/>
+            <stop stop-color="#fff" stop-opacity="0" offset="1"/>
+            <stop stop-color="#FFC837" offset="1"/>
+        </linearGradient>
+    </defs>
+</svg>
