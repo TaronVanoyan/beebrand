@@ -23,7 +23,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="assets/styles/main.css?v=1.0">
-    <link rel="stylesheet" href="assets/styles/media.css?v=1.0">
+    <link rel="stylesheet" href="assets/styles/media.css?v=2.0">
 
     <link rel="stylesheet" type="text/css" href="assets/styles/slick/slick.css"/>
 
@@ -36,7 +36,7 @@
 <div class="container">
     <!--  Top section  -->
     <div class="row">
-        <div class="col-xl-6 top__section-left">
+        <div class="col-xl-6 col-lg-6 col-md-8 col-12 top__section-left">
             <div class="logo__container">
                 <img class="logo__container__main" src="./assets/images/logo.png" alt="BeeBrand">
             </div>
@@ -47,21 +47,27 @@
                 scrambled it to make a type specimen book.
             </p>
             <div class="box__send-contact d-flex">
-                <input class="box__send-contact__input" type="text" placeholder="Email or phone number">
-                <button class="box__send-contact__btn">Send</button>
+                <div class="hexagon__shadow send-contact__input">
+                    <input class="box__send-contact__input" type="text" placeholder="Email or phone number">
+                </div>
+                <div class="hexagon__shadow send-contact">
+                    <button class="box__send-contact__btn">Send</button>
+                </div>
             </div>
         </div>
-        <div class="col-xl-6 top__section-right">
-            <img class="main__video" src="./assets/images/video_preload.png" alt="video">
-            <!--            <div class="top__section-right__buttons">-->
-            <!--                <div class="hexagon__container message d-flex">-->
-            <!--                    <img src="/assets/images/icons/telegram.svg" alt="Tel">-->
-            <!--                </div>-->
-            <!--                <div class="hexagon__container start d-flex">-->
-            <!--                    <span>Start Project</span>-->
-            <!--                </div>-->
-            <!--            </div>-->
+        <div class="col-xl-6 col-lg-6 col-md-4 col-12 top__section-right">
+            <div class="top__section-right__buttons">
+                <div class="hexagon__shadow">
+                    <button class="hexagon__button hexagon__transparent top__section-right telegram"></button>
+                </div>
+                <div class="hexagon__shadow">
+                    <button class="hexagon__button top__section-right start-project text-default">Start Project</button>
+                </div>
+            </div>
         </div>
+        <!--        <div class="col-xl-1">-->
+        <!--            <img class="main__video" src="./assets/images/video_preload.png" alt="video">-->
+        <!--        </div>-->
     </div>
 
     <!--  Service section  -->
@@ -72,45 +78,59 @@
         </div>
         <div class="col-xl-12 section__services">
             <div class="row section__services__container">
-                <div class="col-xl-3 section__services__item d-flex">
-                    <div class="service__hexagon">
-                        <img src="assets/images/icons/branding-service-icon.svg" class="service__hexagon__icon"
-                             alt="Branding">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="section__services__item">
+                        <div class="service__hexagon">
+                            <img src="assets/images/icons/branding-service-icon.svg" class="service__hexagon__icon"
+                                 alt="Branding">
+                        </div>
+                        <span class="service__hexagon__title">Branding</span>
                     </div>
-                    <span class="service__hexagon__title">Branding</span>
                 </div>
-                <div class="col-xl-3 section__services__item d-flex">
-                    <div class="service__hexagon">
-                        <img src="assets/images/icons/web-service-icon.svg" class="service__hexagon__icon" alt="Web">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="section__services__item">
+                        <div class="service__hexagon">
+                            <img src="assets/images/icons/web-service-icon.svg" class="service__hexagon__icon"
+                                 alt="Web">
+                        </div>
+                        <span class="service__hexagon__title">Web</span>
                     </div>
-                    <span class="service__hexagon__title">Web</span>
                 </div>
-                <div class="col-xl-3 section__services__item d-flex">
-                    <div class="service__hexagon">
-                        <img src="assets/images/icons/typography-service-icon.svg" class="service__hexagon__icon"
-                             alt="Typography">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="section__services__item">
+                        <div class="service__hexagon">
+                            <img src="assets/images/icons/typography-service-icon.svg" class="service__hexagon__icon"
+                                 alt="Typography">
+                        </div>
+                        <span class="service__hexagon__title">Typography</span>
                     </div>
-                    <span class="service__hexagon__title">Typography</span>
                 </div>
-                <div class="col-xl-3 section__services__item d-flex">
-                    <div class="service__hexagon">
-                        <img src="assets/images/icons/photo-service-icon.svg" class="service__hexagon__icon"
-                             alt="Photo/Video">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="section__services__item">
+                        <div class="service__hexagon">
+                            <img src="assets/images/icons/photo-service-icon.svg" class="service__hexagon__icon"
+                                 alt="Photo/Video">
+                        </div>
+                        <span class="service__hexagon__title">Photo/Video</span>
                     </div>
-                    <span class="service__hexagon__title">Photo/Video</span>
                 </div>
-                <div class="col-xl-3 section__services__item d-flex">
-                    <div class="service__hexagon">
-                        <img src="assets/images/icons/smm-service-icon.svg" class="service__hexagon__icon" alt="SMM">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="section__services__item">
+                        <div class="service__hexagon">
+                            <img src="assets/images/icons/smm-service-icon.svg" class="service__hexagon__icon"
+                                 alt="SMM">
+                        </div>
+                        <span class="service__hexagon__title">SMM</span>
                     </div>
-                    <span class="service__hexagon__title">SMM</span>
                 </div>
-                <div class="col-xl-3 section__services__item d-flex">
-                    <div class="service__hexagon">
-                        <img src="assets/images/icons/design-service-icon.svg" class="service__hexagon__icon"
-                             alt="Design">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="section__services__item">
+                        <div class="service__hexagon">
+                            <img src="assets/images/icons/design-service-icon.svg" class="service__hexagon__icon"
+                                 alt="Design">
+                        </div>
+                        <span class="service__hexagon__title">Design</span>
                     </div>
-                    <span class="service__hexagon__title">Design</span>
                 </div>
             </div>
         </div>
@@ -126,15 +146,15 @@
         </div>
         <div class="col-xl-12 section__portfolio">
             <ul class="section__portfolio__filter d-flex">
-                <li>All</li>
-                <li class="active">Photo</li>
-                <li>Video</li>
-                <li>Design</li>
-                <li>Web</li>
-                <li>Branding</li>
+                <li><a href="#">All</a></li>
+                <li><a href="#" class="active">Photo</a></li>
+                <li><a href="#">Video</a></li>
+                <li><a href="#">Design</a></li>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Branding</a></li>
             </ul>
             <div class="row">
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                     <div class="portfolio__about">
                         <span class="portfolio__about__title">Lorem Ipsum</span>
@@ -143,7 +163,7 @@
                              alt="icon">
                     </div>
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                     <div class="portfolio__about">
                         <span class="portfolio__about__title text-ellipsis">Lorem Ipsum</span>
@@ -152,7 +172,7 @@
                              alt="icon">
                     </div>
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                     <div class="portfolio__about">
                         <span class="portfolio__about__title text-ellipsis">Lorem Ipsum</span>
@@ -161,7 +181,7 @@
                              alt="icon">
                     </div>
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                     <div class="portfolio__about">
                         <span class="portfolio__about__title text-ellipsis">Lorem Ipsum</span>
@@ -170,20 +190,22 @@
                              alt="icon">
                     </div>
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                 </div>
-                <div class="col-xl-3 portfolio">
+                <div class="col-xl-3 col-md-6 col-12 portfolio">
                     <img src="assets/images/portfolio-image.png" class="portfolio__image" alt="Portfolio">
                 </div>
             </div>
-            <div class="hexagon__button additional-action">See all</div>
+            <div class="hexagon__shadow additional-action">
+                <button class="hexagon__button">See all</button>
+            </div>
         </div>
     </div>
 
@@ -197,106 +219,109 @@
         </div>
         <div class="col-xl-12 section__pricing">
             <div class="row">
-                <div class="col-xl-4 section__pricing__plan">
-                    <div class="section__pricing__plan__header">
-                        <span>Standart</span>
-                        <div class="service__hexagon section__pricing__hexagon"></div>
-                    </div>
-                    <div class="section__pricing__plan__content">
-                        <ul class="section__pricing__offers">
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="section__pricing__plan__footer d-flex">
-                        <div class="hexagon__button hexagon__transparent submit__plan">
-                            <span>Submit</span>
-                        </div>
-
-                        <div class="hexagon__button hexagon__transparent edit__plan"></div>
-                    </div>
-                </div>
-                <div class="col-xl-4 section__pricing__plan">
-                    <div class="section__pricing__plan__header">
-                        <span>Standart</span>
-                        <div class="service__hexagon section__pricing__hexagon"></div>
-                    </div>
-                    <div class="section__pricing__plan__content">
-                        <ul class="section__pricing__offers">
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="section__pricing__plan__footer d-flex">
-                        <div class="hexagon__button hexagon__transparent submit__plan">
-                            <span>Submit</span>
-                        </div>
-
-                        <div class="hexagon__button hexagon__transparent edit__plan"></div>
-                    </div>
-                </div>
-                <div class="col-xl-4 section__pricing__plan">
-                    <div class="section__pricing__plan__header">
-                        <span>Standart</span>
-                        <div class="service__hexagon section__pricing__hexagon"></div>
-                    </div>
-                    <div class="section__pricing__plan__content">
-                        <ul class="section__pricing__offers">
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                            <li class="section__pricing__offer">
-                                <p>Donec vulputate urna sed rutrum.</p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="section__pricing__plan__footer">
-                        <div class="section__pricing__plan__footer d-flex">
-                            <div class="hexagon__button hexagon__transparent submit__plan">
-                                <span>Submit</span>
+                <div class="col-lg-4 col-12 section__pricing__item">
+                    <div class="section__pricing__plan">
+                        <div class="section__pricing__plan__header">
+                            <span>Standart</span>
+                            <div class="hexagon__shadow section__pricing__hexagon">
+                                <div class="service__hexagon"></div>
                             </div>
-
-                            <div class="hexagon__button hexagon__transparent edit__plan"></div>
+                        </div>
+                        <div class="section__pricing__plan__content">
+                            <ul class="section__pricing__offers">
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__pricing__plan__footer">
+                            <button class="hexagon__button hexagon__transparent submit__plan">Submit</button>
+                            <button class="hexagon__button hexagon__transparent edit__plan"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 section__pricing__item">
+                    <div class="section__pricing__plan">
+                        <div class="section__pricing__plan__header">
+                            <span>Standart</span>
+                            <div class="hexagon__shadow section__pricing__hexagon">
+                                <div class="service__hexagon"></div>
+                            </div>
+                        </div>
+                        <div class="section__pricing__plan__content">
+                            <ul class="section__pricing__offers">
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__pricing__plan__footer">
+                            <button class="hexagon__button hexagon__transparent submit__plan">Submit</button>
+                            <button class="hexagon__button hexagon__transparent edit__plan"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-12 section__pricing__item">
+                    <div class="section__pricing__plan">
+                        <div class="section__pricing__plan__header">
+                            <span>Standart</span>
+                            <div class="hexagon__shadow section__pricing__hexagon">
+                                <div class="service__hexagon"></div>
+                            </div>
+                        </div>
+                        <div class="section__pricing__plan__content">
+                            <ul class="section__pricing__offers">
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                                <li class="section__pricing__offer">
+                                    <p>Donec vulputate urna sed rutrum.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="section__pricing__plan__footer">
+                            <button class="hexagon__button hexagon__transparent submit__plan">Submit</button>
+                            <button class="hexagon__button hexagon__transparent edit__plan"></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="hexagon__button additional-action">Create New</div>
+            <div class="hexagon__shadow additional-action">
+                <button class="hexagon__button">Create New</button>
+            </div>
         </div>
         <div class="col-xl-12"></div>
     </div>
@@ -308,7 +333,7 @@
             <img src="assets/images/icons/line.svg" class="section__title__line" alt="header">
         </div>
         <div class="col-xl-12 section__partners">
-            <button class="slick-prev"></button>
+            <button class="hexagon__button slick-prev"></button>
             <div class="section__partners__slide">
                 <div>
                     <img src="./assets/images/slide1.png" alt="slide">

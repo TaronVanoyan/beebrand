@@ -3,3 +3,42 @@
         /*max-width: 1920px !important;*/
     }
 }
+
+@media screen and (min-width: 1140px) {
+    .section__pricing__plan__header {
+        font-size: 2.8em;
+    }
+
+    .section__pricing__plan__footer {
+        display: flex;
+    }
+
+    .submit__plan {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer__content {
+        flex-wrap: wrap;
+    }
+
+    .footer__block {
+        flex-basis: 50%;
+    }
+
+    .footer__block__title {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .top__section-right {
+        display: block;
+    }
+
+    .top__section-right__buttons {
+        width: 100%;
+        margin-top: 27px;
+    }
+}
