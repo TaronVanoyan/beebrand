@@ -1,0 +1,57 @@
+.section__portfolio__filter {
+    margin: 50px 0 0 0;
+}
+
+.page__description {
+    margin-top: 175px !important;
+    position: relative;
+}
+
+.page__description__text {
+    text-transform: lowercase;
+}
+
+.page__description__left {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.page__description__hexagon {
+    width: 130px;
+    height: 140px;
+    background: var(--main-bg-gradient);
+}
+
+.portfolio__hexagon__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    display: inline-block;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    text-align: center;
+}
+
+.hx-0:before {
+    content: none;
+}
+
+.hx-1, .hx-3 {
+    top: -67px;
+    /*left: 133px;*/
+}
+
+.hx-2, .hx-4 {
+    top: 0;
+    /*left: 253px;*/
+}
+
+@media screen and (max-width: 576px) {
+    .hx-0 {
+        margin-left: 25px;
+    }
+
+    .hx-4 {
+        margin-right: 30px;
+    }
+}
