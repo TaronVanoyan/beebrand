@@ -1,0 +1,47 @@
+.blog__main__video {
+    width: 100%;
+    height: 100%;
+    padding-right: 40px;
+}
+
+.section__blog__content {
+    margin-top: 150px !important;
+}
+
+.section__description, .section__title {
+    text-align: left;
+}
+
+.section__title__line {
+    margin-bottom: 30px;
+}
+
+.section__description {
+    text-transform: inherit;
+}
+
+.section__blog__header-left {
+    padding-left: 40px;
+}
+
+.blog {
+    margin-bottom: 100px;
+}
+
+.blog__image {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.section__blog__title {
+    font-size: 22px;
+    line-height: 37px;
+    margin-bottom: 5px;
+}
+
+.section__blog__desc {
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: inherit;
+    margin-bottom: 0;
+}

@@ -91,4 +91,18 @@
     .nav__menu {
         padding: 0 60px;
     }
+
+    .blog__main__video {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+
+    .section__blog__header-left {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .section {
+        margin-top: 100px !important;
+    }
 }
