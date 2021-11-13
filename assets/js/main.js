@@ -25,4 +25,16 @@ $(document).ready(function () {
     $('.mobile__menu__icon').on('click', function () {
         $('.menu').toggleClass('mobile__menu')
     })
+
+    $('.section__services__item').on('click', function (elem) {
+        if ($(elem.target).hasClass('hexagon__button')) {
+            return;
+        }
+
+        $(this).toggleClass('active');
+    })
+
+    $('.section__services__item .hexagon__button').on('click', function (e) {
+        e.preventDefault();
+    })
 });

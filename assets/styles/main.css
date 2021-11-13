@@ -69,7 +69,7 @@ ul {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     position: fixed;
     width: 100%;
-    z-index: 4;
+    z-index: 555;
 }
 
 .menu__logo {
@@ -282,12 +282,11 @@ ul {
     width: 100%;
     height: 100%;
     border: none;
-    font-family: "MontserratBold", sans-serif;
-    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
     line-height: 15px;
     text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
     color: #000000;
     background: var(--main-bg-gradient);
     filter: var(--main-bg-filter);
@@ -402,17 +401,64 @@ ul {
     overflow: hidden;
     cursor: pointer;
     transition: all .3s ease;
+    position: relative;
 }
 
-.section__services__item:hover {
-
+.section__services__item-default {
+    text-align: center;
 }
 
-.section__services__item:hover > .service__hexagon {
+.section__services__item-turned {
+    display: none;
+    flex-direction: column;
+    transform: rotateY(-180deg);
+}
+
+.section__services__item.active > .section__services__item-default {
+    display: none;
+}
+
+.section__services__item.active > .section__services__item-turned {
+    display: flex;
+}
+
+.section__services__item.active {
+    transform: rotateY(180deg);
+    padding: 20px 0;
+}
+
+.section__service__list {
+    padding-left: 0;
+}
+
+.section__services__item__title {
+    margin-bottom: 60px;
+    color: var(--primary-text-color);
+    font-size: 30px;
+    line-height: 37px;
+    text-align: center;
+}
+
+.section__service__list__item {
+    font-family: "Arsenal", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    color: #3C3C3C;
+    text-decoration: none;
+}
+
+.section__service__list__item:hover {
+    color: #3C3C3C;
+    text-decoration: underline;
+}
+
+.section__services__item:hover .service__hexagon {
     background: var(--main-bg-gradient);
+    transform: rotate(90deg);
 }
 
-.section__services__item:hover > .service__hexagon__title {
+.section__services__item:hover .service__hexagon__title {
     background: -webkit-linear-gradient(89.93deg, #FF8008 -65.4%, #FFC837 99.88%, rgba(255, 255, 255, 0) 99.88%, #FFC837 99.88%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -423,19 +469,10 @@ ul {
     width: 150px;
     position: relative;
     background: var(--main-light-grey);
-    transform: rotate(90deg);
     transition: all .3s ease-out;
 
     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-}
-
-.section__services__item:hover > .service__hexagon {
-    transform: inherit;
-}
-
-.section__services__item:hover > .service__hexagon > .service__hexagon__icon {
-    transform: translate(-50%, -50%) rotate(0deg);
 }
 
 .service__hexagon:before {
@@ -468,13 +505,18 @@ ul {
     max-width: 320px;
 }
 
+.section__services__item-default > .service__hexagon {
+    margin: 0 auto;
+}
+
 .service__hexagon__icon {
     position: absolute;
     width: 61px;
     height: 61px;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%) rotate(-90deg);
+    top: 45%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
 }
 
 .section__services__container {
@@ -610,8 +652,8 @@ ul {
     border: none;
     position: relative;
     background: var(--main-bg-gradient);
-    -webkit-clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
-    clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
+    -webkit-clip-path: polygon(89% 4%, 99% 49%, 89% 96%, 11% 96%, 1% 50%, 11% 4%);
+    clip-path: polygon(89% 4%, 99% 49%, 89% 96%, 11% 96%, 1% 50%, 11% 4%);
 }
 
 .additional-action {
@@ -637,6 +679,14 @@ ul {
     box-shadow: 0 0 10px rgba(174, 174, 174, 0.28);
     padding-bottom: 70px;
     cursor: pointer;
+}
+
+.section__pricing__plan:hover .hexagon__transparent:before {
+    background-color: transparent;
+}
+
+.section__pricing__plan:hover .hexagon__button {
+    color: #000000;
 }
 
 .section__pricing__plan:hover {
@@ -699,6 +749,7 @@ ul {
 .section__pricing__offers {
     height: 300px;
     overflow-y: auto;
+    margin-bottom: 20px;
 }
 
 .section__pricing__offers::-webkit-scrollbar {
@@ -736,27 +787,24 @@ ul {
     clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%, 10% 0%);
 }
 
-.submit__plan {
-    width: 230px;
-    margin-bottom: 10px;
-}
-
 .submit__plan:before {
-    -webkit-clip-path: polygon(206px 3px, 227px 27px, 206px 52px, 24px 52px, 3px 28px, 24px 3px);
-    clip-path: polygon(206px 3px, 227px 27px, 206px 52px, 24px 52px, 3px 28px, 24px 3px);
+    -webkit-clip-path: polygon(204px 4px, 225px 27px, 203px 51px, 26px 51px, 5px 28px, 26px 4px);
+    clip-path: polygon(204px 4px, 225px 27px, 203px 51px, 26px 51px, 5px 28px, 26px 4px);
 }
 
 .section__pricing__price {
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 0;
-    color: var(--primary-text-color);
+    color: #E3A905;
 }
 
 .submit__plan {
+    width: 230px;
+    margin-bottom: 10px;
     font-family: Arsenal, sans-serif;
     position: relative;
-    z-index: 111;
+    z-index: 1;
     font-size: 1.5em;
     line-height: 33px;
     color: var(--primary-text-color);
@@ -845,8 +893,8 @@ ul {
 }
 
 .slick-prev:before, .slick-next:before {
-    -webkit-clip-path: polygon(53px 2px, 67px 35px, 53px 67px, 18px 70px, 3px 35px, 17px 2px);
-    clip-path: polygon(53px 2px, 67px 35px, 53px 67px, 18px 70px, 3px 35px, 17px 2px);
+    -webkit-clip-path: polygon(54px 2px, 68px 35px, 54px 68px, 16px 68px, 2px 35px, 16px 2px);
+    clip-path: polygon(54px 2px, 68px 35px, 54px 68px, 16px 68px, 2px 35px, 16px 2px);
 }
 
 .slick-track {
@@ -994,3 +1042,27 @@ ul {
     background-position-y: -79px;
 }
 
+.create__plan__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 1088px;
+    width: 100%;
+    padding: 50px 25px;
+
+    background: #FFFFFF;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.25);
+}
+
+.create__plan__row__text {
+    font-size: 25px;
+    line-height: 37px;
+    margin-bottom: 0;
+    margin-right: 20px;
+}
+
+.create__plan__row > .additional-action {
+    margin-top: 0;
+}
