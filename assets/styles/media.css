@@ -67,6 +67,10 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
+
+    .blog__video {
+        min-height: 303px;
+    }
 }
 
 @media screen and (max-width: 992px) {

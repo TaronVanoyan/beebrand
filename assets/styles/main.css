@@ -61,6 +61,12 @@ ul {
     text-transform: uppercase;
 }
 
+.position-alignment-center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .nav__menu {
     align-items: center;
     justify-content: space-between;

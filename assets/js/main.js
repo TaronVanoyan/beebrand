@@ -37,4 +37,16 @@ $(document).ready(function () {
     $('.section__services__item .hexagon__button').on('click', function (e) {
         e.preventDefault();
     })
+
+    $('.blog__video__container').on('click', function () {
+        if (!$(this).hasClass('active')) {
+            const iframeUrl = $(this).attr('childIframe');
+            const iframeNode = $('<iframe width="303" height="303" class="blog__video" src=" ' + iframeUrl +'"/>');
+
+            $(this).find("img").css('display', 'none');
+            $(this).addClass('active');
+
+            $(this).append(iframeNode);
+        }
+    })
 });
