@@ -10,6 +10,18 @@ $(document).ready(function () {
         // autoplaySpeed: 2000,
     });
 
+    $('.section__project__slide').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+    });
+
+    $('.modal__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+    });
+
     $('.top__video').on('click', function () {
         $('.full__screen').addClass('active');
 
@@ -31,7 +43,17 @@ $(document).ready(function () {
             return;
         }
 
-        $(this).toggleClass('active');
+        const prevOpened = $('.section__services__container').find('.active');
+
+        if ($(this)[0] === prevOpened[0]) {
+            $(this).removeClass('active');
+
+            return;
+        } else if (prevOpened[0]) {
+            prevOpened.removeClass('active')
+        }
+
+        $(this).addClass('active');
     })
 
     $('.section__services__item .hexagon__button').on('click', function (e) {
@@ -41,7 +63,7 @@ $(document).ready(function () {
     $('.blog__video__container').on('click', function () {
         if (!$(this).hasClass('active')) {
             const iframeUrl = $(this).attr('childIframe');
-            const iframeNode = $('<iframe width="303" height="303" class="blog__video" src=" ' + iframeUrl +'"/>');
+            const iframeNode = $('<iframe width="303" height="303" class="blog__video" src=" ' + iframeUrl + '"/>');
 
             $(this).find("img").css('display', 'none');
             $(this).addClass('active');
@@ -50,3 +72,5 @@ $(document).ready(function () {
         }
     })
 });
+
+

@@ -50,12 +50,13 @@
     transform: rotate(180deg);
     transition: all .3s ease-in-out;
     background: #ffffff;
+    position: absolute;
+    left: 25px;
+    top: 35px;
 }
 
 .team__member:hover .team__member__hexagon {
-    position: absolute;
     top: -50px;
-    left: 25px;
 }
 
 .team__member__hexagon:before {

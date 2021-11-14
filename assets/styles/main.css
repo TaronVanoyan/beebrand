@@ -45,6 +45,15 @@ ul {
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
 .d-flex {
     display: -webkit-box;
     display: -moz-box;
@@ -187,7 +196,7 @@ ul {
 }
 
 .section {
-    margin-top: 150px !important;
+    margin-top: 100px !important;
 }
 
 .top__section-right {
@@ -199,7 +208,7 @@ ul {
 .top__section-right__buttons {
     width: 167px;
     position: fixed;
-    top: 60%;
+    top: 80%;
     right: 30px;
     z-index: 3;
 }
@@ -210,7 +219,7 @@ ul {
 }
 
 .hexagon__shadow:not(.send-contact__input):hover {
-    filter: drop-shadow(0 0 7px rgba(0, 0, 0, 0.25));
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
 }
 
 .hexagon__button.start-project, .hexagon__button.telegram {
@@ -233,6 +242,7 @@ ul {
 
 .logo__container {
     text-align: center;
+    max-width: 495px;
 }
 
 .logo__container__main {
@@ -251,6 +261,7 @@ ul {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 0;
+    max-width: 495px;
 }
 
 .main__description {
@@ -339,8 +350,8 @@ ul {
 }
 
 .top__video {
-    width: 500px;
-    height: 450px;
+    width: 750px;
+    height: 550px;
     cursor: pointer;
     transition: all 1.5s ease-in-out;
     position: absolute;
@@ -390,6 +401,10 @@ ul {
     text-align: center;
 }
 
+#services, #plans, #contacts {
+    padding-top: 50px;
+}
+
 .section__services {
     margin-top: 100px !important;
 }
@@ -406,7 +421,7 @@ ul {
     box-shadow: 0 0 19px rgba(0, 0, 0, 0.25);
     overflow: hidden;
     cursor: pointer;
-    transition: all .3s ease;
+    transition: all 1.5s ease;
     position: relative;
 }
 
@@ -621,8 +636,9 @@ ul {
     font-family: "Montserrat", sans-serif;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
     overflow: hidden;
+    text-decoration: none;
 }
 
 .portfolio__about__title {
@@ -854,7 +870,7 @@ ul {
 }
 
 /* Slick slider */
-.slick-prev, .slick-next {
+.section__partners .slick-prev, .section__partners .slick-next {
     border: none;
     -webkit-clip-path: polygon(55px 0%, 100% 50%, 55px 100%, 15px 100%, 0% 50%, 15px 0%);
     clip-path: polygon(55px 0%, 100% 50%, 55px 100%, 15px 100%, 0% 50%, 15px 0%);
@@ -882,7 +898,7 @@ ul {
     left: calc(50% + 50px);
 }
 
-.slick-prev:after {
+.section__partners .slick-prev:after {
     content: url("../images/icons/arrow-left.svg");
     position: absolute;
     top: 50%;
@@ -890,7 +906,7 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.slick-next:after {
+.section__partners .slick-next:after {
     content: url("../images/icons/arrow-right.svg");
     position: absolute;
     top: 50%;
@@ -898,7 +914,7 @@ ul {
     transform: translate(-50%, -50%);
 }
 
-.slick-prev:before, .slick-next:before {
+.section__partners .slick-prev:before, .section__partners .slick-next:before {
     -webkit-clip-path: polygon(54px 2px, 68px 35px, 54px 68px, 16px 68px, 2px 35px, 16px 2px);
     clip-path: polygon(54px 2px, 68px 35px, 54px 68px, 16px 68px, 2px 35px, 16px 2px);
 }
@@ -913,6 +929,8 @@ ul {
     width: 100%;
     background: #000000;
     margin-top: 80px;
+    position: relative;
+    z-index: 5;
 }
 
 .footer__content {
