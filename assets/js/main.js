@@ -22,14 +22,17 @@ $(document).ready(function () {
         arrows: true,
     });
 
-    $('.top__video').on('click', function () {
-        $('.full__screen').addClass('active');
+    $('.full__screen').on('click', function () {
+        $(this).addClass('active');
+        $('.top__video__close').css('display', 'block');
+        $("html, body").animate({ scrollTop: 0 }, "slow");
 
         $('body').css('overflow', 'hidden');
     });
 
     $('.top__video__close').on('click', function () {
         $('.full__screen').removeClass('active');
+        $('.top__video__close').css('display', 'none');
 
         $('body').css('overflow', 'inherit');
     });

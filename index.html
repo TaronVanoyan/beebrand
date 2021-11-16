@@ -83,17 +83,28 @@
                     <button class="hexagon__button hexagon__transparent top__section-right telegram"></button>
                 </div>
                 <div class="hexagon__shadow">
-                    <button class="hexagon__button hexagon__transparent top__section-right start-project text-default">Start Project</button>
+                    <button class="hexagon__button hexagon__transparent top__section-right start-project text-default">
+                        Start Project
+                    </button>
                 </div>
             </div>
 
-            <div class="full__screen">
-                <div class="full__screen__back"></div>
-                <video class="top__video" width="500" height="500" controls autoplay>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+            <div>
                 <span class="top__video__close">X</span>
+                <div class="full__screen">
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" allowfullscreen class="top__video" width="750" height="550" frameborder="0"></iframe>
+                </div>
+                <svg style="visibility: hidden; position: absolute;" width="0" height="0"
+                     xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="round">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+                            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9"
+                                           result="goo"/>
+                            <feComposite in="SourceGraphic" in2="goo" operator="atop"/>
+                        </filter>
+                    </defs>
+                </svg>
             </div>
         </div>
     </div>
@@ -377,7 +388,7 @@
                 </div>
             </div>
             <div class="hexagon__shadow additional-action">
-                <button class="hexagon__button">See all</button>
+                <button class="hexagon__button hexagon__transparent">See all</button>
             </div>
         </div>
     </div>
@@ -420,7 +431,7 @@
                             </ul>
                             <p class="section__pricing__price text-default">10,000 AMD</p>
                         </div>
-                        <div class="section__pricing__plan__footer">
+                        <div class="hexagon__shadow section__pricing__plan__footer">
                             <button class="hexagon__button hexagon__transparent submit__plan">Submit</button>
                         </div>
                     </div>
@@ -453,7 +464,7 @@
                             </ul>
                             <p class="section__pricing__price text-default">10,000 AMD</p>
                         </div>
-                        <div class="section__pricing__plan__footer">
+                        <div class="hexagon__shadow section__pricing__plan__footer">
                             <button class="hexagon__button hexagon__transparent submit__plan">Submit</button>
                         </div>
                     </div>
@@ -486,7 +497,7 @@
                             </ul>
                             <p class="section__pricing__price text-default">10,000 AMD</p>
                         </div>
-                        <div class="section__pricing__plan__footer">
+                        <div class="hexagon__shadow section__pricing__plan__footer">
                             <button class="hexagon__button hexagon__transparent submit__plan">Submit</button>
                         </div>
                     </div>
