@@ -22,8 +22,8 @@ $(document).ready(function () {
         arrows: true,
     });
 
-    $('.full__screen').on('click', function () {
-        $(this).addClass('active');
+    $('.over-layer').on('click', function () {
+        $('.full__screen').addClass('active');
         $('.top__video__close').css('display', 'block');
         $("html, body").animate({ scrollTop: 0 }, "slow");
 
@@ -74,6 +74,11 @@ $(document).ready(function () {
             $(this).append(iframeNode);
         }
     })
+
+    $('.menu__item').on('click', function () {
+        $('.menu').find('.active').removeClass('active');
+        $(this).addClass('active');
+    });
 });
 
 
