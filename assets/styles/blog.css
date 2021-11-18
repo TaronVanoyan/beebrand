@@ -37,6 +37,10 @@
     object-fit: cover;
 }
 
+.blog__video__container.active > .blog__image {
+    display: none;
+}
+
 .section__blog__title {
     font-size: 22px;
     line-height: 37px;

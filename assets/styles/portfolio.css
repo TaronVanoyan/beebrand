@@ -23,6 +23,10 @@
     transform: rotate(90deg);
 }
 
+.page__description__hexagon:hover.service__hexagon:before {
+    background: transparent;
+}
+
 .portfolio__hexagon__text {
     position: absolute;
     left: 50%;
@@ -31,20 +35,15 @@
     display: inline-block;
     transform: translate(-50%, -50%) rotate(-90deg);
     text-align: center;
-}
-
-.hx-0:before {
-    content: none;
+    cursor: pointer;
 }
 
 .hx-1, .hx-3 {
     top: -67px;
-    /*left: 133px;*/
 }
 
 .hx-2, .hx-4 {
     top: 0;
-    /*left: 253px;*/
 }
 
 @media screen and (max-width: 576px) {

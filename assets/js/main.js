@@ -65,13 +65,16 @@ $(document).ready(function () {
 
     $('.blog__video__container').on('click', function () {
         if (!$(this).hasClass('active')) {
+            const prevOpened = $('.section__blog__content').find('.active');
+            prevOpened.removeClass('active');
+            prevOpened.find('iframe').remove();
+
             const iframeUrl = $(this).attr('childIframe');
             const iframeNode = $('<iframe width="303" height="303" class="blog__video" src=" ' + iframeUrl + '"/>');
 
-            $(this).find("img").css('display', 'none');
-            $(this).addClass('active');
-
             $(this).append(iframeNode);
+
+            $(this).addClass('active');
         }
     })
 
