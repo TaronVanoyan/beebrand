@@ -1,0 +1,100 @@
+.about-project__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.section__row {
+    margin-top: 50px !important;
+}
+
+.checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.networks__row .checkbox-group {
+    margin-top: 25px;
+}
+
+.checkbox-group {
+    margin-top: 58px;
+    flex-wrap: wrap;
+}
+
+.checkbox-default {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.product-type__button {
+    width: 170px;
+    height: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #FFC837;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background: #ffffff;
+    color: #636363;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.product-type__button:hover {
+    background-color: #FFC837;
+}
+
+.buttons-group {
+    width: 100%;
+    max-width: 760px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.company__name {
+    height: 50px;
+}
+
+textarea.project__details {
+    resize: none;
+    height: 100px;
+}
+
+.inputs-group {
+    width: 100%;
+    max-width: 750px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-default-rounded {
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 2px solid #B6B6B6;
+    box-sizing: border-box;
+    border-radius: 36px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.personal__info {
+    max-width: 360px !important;
+    width: 100% !important;
+}
+
+.send__row {
+    text-align: center;
+    margin-top: 100px !important;
+}
+
+.send__row > .hexagon__shadow {
+    display: inline-block;
+}

@@ -112,6 +112,17 @@
     }
 }
 
+@media screen and (max-width: 876px) {
+    #congratulations .modal-dialog {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .congratulations.modal-body {
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 992px) {
     .footer__content {
         flex-wrap: wrap;
@@ -154,5 +165,13 @@
     .section__project__slide > .slick-arrow {
         width: 35px;
         height: 35px;
+    }
+
+    .cong__text__title {
+        font-size: 20px;
+    }
+
+    #congratulations .close-modal {
+        top: 10px;
     }
 }

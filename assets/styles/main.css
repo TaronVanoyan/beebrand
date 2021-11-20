@@ -1107,3 +1107,66 @@ a:hover {
     background: transparent;
     border-radius: 20%;
 }
+
+#congratulations .close-modal {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    font-size: 24px;
+    z-index: 55;
+    border: 0;
+    background-color: transparent;
+}
+
+#congratulations .modal-dialog {
+    max-width: inherit;
+    width: 80%;
+}
+
+.congratulations.modal-body {
+    padding: 5%;
+    align-items: center;
+}
+
+.cong__form__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    margin-bottom: 15px;
+}
+
+.cong__form {
+    flex-direction: column;
+    flex-basis: 360px;
+    margin-left: 4%;
+}
+
+.input-default-rounded {
+    height: 50px;
+    background-color: #FFFFFF;
+    border: 2px solid #B6B6B6;
+    box-sizing: border-box;
+    border-radius: 36px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+}
+
+.cong__text {
+    text-align: center;
+    flex-basis: 50%;
+    margin-right: 4%;
+}
+
+.cong__text > * {
+    margin-bottom: 20px;
+}
+
+.cong__text__title {
+    color: #000000;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.cong__form__send {
+    margin-top: 15px;
+}

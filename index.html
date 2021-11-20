@@ -93,7 +93,8 @@
                 <span class="top__video__close">X</span>
                 <div class="full__screen">
                     <div class="over-layer"></div>
-                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" allowfullscreen class="top__video" width="750" height="550" frameborder="0"></iframe>
+                    <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1" allowfullscreen
+                            class="top__video" width="750" height="550" frameborder="0"></iframe>
                 </div>
                 <svg style="visibility: hidden; position: absolute;" width="0" height="0"
                      xmlns="http://www.w3.org/2000/svg" version="1.1">
@@ -558,6 +559,7 @@
     </div>
 
 </div>
+
 <div class="footer" id="footer">
     <div class="footer__content d-flex">
         <div class="footer__block footer__logo">
@@ -605,6 +607,47 @@
     </div>
     <p class="footer__copy-right">Copyrights by BEEBRAND</p>
 </div>
+
+<!-- Congratulations Modal -->
+<div class="modal fade" id="congratulations" tabindex="-1" role="dialog" aria-labelledby="congratulations"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <button class="close-modal" data-toggle="modal" data-target="#congratulations">X</button>
+            <div class="modal-body congratulations d-flex">
+                <div class="cong__text">
+                    <h2 class="cong__text__title text-default">CONGRATULATIONS</h2>
+                    <img src="./assets/images/congrates.png" alt="" width="280" height="175">
+                    <p class="text-default">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummyLorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard dummyLorem Ipsum is simply dummy text of
+                        the printing and typesetting industry. </p>
+                </div>
+                <div class="cong__form d-flex">
+                    <h2 class="cong__form__title text-default">Personal Details</h2>
+                    <input type="text" name="personName" class="input-default-rounded" placeholder="Name">
+                    <input type="text" name="personName" class="input-default-rounded"
+                           placeholder="Email or Phone number">
+                    <input type="text" name="personName" class="input-default-rounded"
+                           placeholder="Email or Phone number">
+                    <div class="hexagon__shadow cong__form__send">
+                        <button class="hexagon__button hexagon__transparent">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="./assets/js/lib/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="./assets/js/lib/jquery-migrate-1.2.1.min.js"></script>
