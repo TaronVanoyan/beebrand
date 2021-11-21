@@ -12,6 +12,92 @@
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .main__title {
+        font-size: 43px;
+    }
+
+    .section__description {
+        font-size: 18px;
+    }
+
+    .section__title, .portfolio__about__title {
+        font-size: 25px;
+    }
+
+    .portfolio__about__subtitle {
+        font-size: 13px;
+    }
+
+    .section__portfolio__filter a {
+        font-size: 20px;
+    }
+
+
+    .section__services__item-default {
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .service__hexagon__title {
+        margin-top: 0;
+        flex-basis: 50%;
+        font-size: 20px;
+    }
+
+    .section__services__item {
+        height: 211px;
+    }
+
+    .service__hexagon {
+        height: 150px;
+        width: 120px;
+        margin: 0 auto;
+    }
+
+    .service__hexagon__icon {
+        width: 37px;
+        height: 37px;
+        top: 48%;
+    }
+
+    .service__default__content {
+        flex-basis: 50%
+    }
+
+    .footer__block__service {
+        display: none;
+    }
+
+    .footer__block {
+        margin-right: 0;
+    }
+
+    .footer__block__list__item {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .full__screen {
+        width: 500px;
+        height: 460px;
+    }
+
+    .top__video {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .full__screen {
+        width: 750px;
+        height: 650px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .top__section-right {
         display: block;
@@ -110,6 +196,18 @@
     .project-inner__desc {
         margin-top: 20px;
     }
+
+    .portfolio {
+        height: 210px;
+    }
+
+    .portfolio__image {
+        height: 100%;
+    }
+
+    .footer__block__title {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 876px) {
@@ -159,8 +257,60 @@
     .section {
         margin-top: 100px !important;
     }
+
+    .video__container, .logo__container {
+        display: none;
+    }
+
+    .main__title, .main__description {
+        max-width: inherit;
+    }
+
+    .box__send-contact {
+        max-width: 450px;
+        /*width: 100%;*/
+        /* margin: 70px auto; */
+    }
+
+    .section__pricing__offers {
+        height: 250px;
+    }
+
+    .section__pricing__plan__header {
+        font-size: 28px;
+        height: 124px;
+    }
+
+    .section__pricing__plan__content {
+        margin: 80px 0 40px;
+    }
+
+    .section__pricing__hexagon {
+        bottom: -36px;
+    }
+
+    .section__pricing__hexagon > .service__hexagon {
+        width: 70px;
+        height: 75px;
+    }
+
+    .create__plan__row__text {
+        font-size: 20px;
+    }
+
+    .footer__logo__icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .top__section-left {
+        background: no-repeat url('../images/main__bg__image.png');
+        background-size: cover;
+        padding-bottom: 50px;
+    }
 }
 
+/*mobile*/
 @media screen and (max-width: 576px) {
     .section__project__slide > .slick-arrow {
         width: 35px;

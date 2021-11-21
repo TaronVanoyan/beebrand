@@ -234,6 +234,8 @@ a:hover {
     height: 48px;
     text-decoration: none;
     color: #000000;
+    text-align: center;
+    line-height: 48px;
 }
 
 .hexagon__button.telegram {
@@ -367,8 +369,6 @@ a:hover {
 }
 
 .full__screen {
-    width: 750px;
-    height: 650px;
     position: absolute;
     top: 50px;
     right: 0;
@@ -410,6 +410,10 @@ a:hover {
     margin-top: 100px !important;
 }
 
+.service__default__content {
+    position: relative;
+}
+
 .section__services__item {
     display: flex;
     width: 100%;
@@ -428,6 +432,8 @@ a:hover {
 
 .section__services__item-default {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .section__services__item-turned {
@@ -1171,4 +1177,8 @@ a:hover {
 
 .cong__form__send {
     margin-top: 15px;
+}
+
+.footer__block__list {
+    padding-left: 0;
 }
