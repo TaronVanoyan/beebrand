@@ -12,6 +12,7 @@
 }
 
 .page__description__left {
+    display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }

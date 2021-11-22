@@ -31,22 +31,6 @@
     cursor: pointer;
 }
 
-.section__project__slide > .slick-arrow, .modal__slider > .slick-arrow {
-    display: inline-block;
-    z-index: 55;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: transparent;
-    border: 1px solid var(--primary-text-color);
-    color: transparent;
-    font-size: 0;
-    background: no-repeat url("../images/icons/arrow-orange.svg");
-    background-position: 50%;
-    position: absolute;
-    top: 50%;
-}
-
 .slick-arrow:hover {
     background: no-repeat url("../images/icons/arrow-white.svg"), linear-gradient(89.93deg, #FF8008 -65.4%, #FFC837 99.88%, rgba(255, 255, 255, 0) 99.88%, #FFC837 99.88%);
     border: none;

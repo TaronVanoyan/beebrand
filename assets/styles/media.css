@@ -52,7 +52,7 @@
     }
 
     .service__hexagon {
-        height: 150px;
+        height: 140px;
         width: 120px;
         margin: 0 auto;
     }
@@ -104,8 +104,10 @@
     }
 
     .top__section-right__buttons {
-        width: 100%;
+        width: auto;
         margin-top: 27px;
+        bottom: 5px;
+        right: 10px;
     }
 
     .section__portfolio__filter {
@@ -127,10 +129,14 @@
     .page__description__hexagon {
         height: 130px;
         font-size: 14px;
+        position: absolute;
     }
 
-    .top__section-right__buttons {
-        position: inherit;
+    .top__section-right__buttons .hexagon__button {
+        width: 52px;
+        height: 52px;
+        clip-path: polygon(40px 4%, 99% 49%, 40px 96%, 12px 96%, 1% 50%, 12px 4%);
+        font-size: 13px;
     }
 
     .create__plan__row {
@@ -208,6 +214,55 @@
     .footer__block__title {
         font-size: 25px;
     }
+
+    .top__section-right__buttons .hexagon__button:before {
+        background: var(--main-bg-gradient);
+    }
+
+    .section__partners .hexagon__shadow {
+        display: none !important;
+    }
+
+    .section__partners > .slick-next,
+    .section__partners > .slick-prev {
+        display: inherit !important;
+    }
+
+    .section__portfolio__filter {
+        display: none !important;
+    }
+
+    .page__description__left {
+        height: 200px;
+        width: 60% !important;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .hx-0 {
+        left: 10px;
+        top: -100px;
+    }
+
+    .hx-1 {
+        left: 114px;
+        top: -160px;
+    }
+
+    .hx-2 {
+        left: 216px;
+        top: -97px;
+    }
+
+    .hx-3 {
+        top: -37px;
+        left: 113px;
+    }
+
+    .hx-4 {
+        top: 23px;
+        left: 11px;
+    }
 }
 
 @media screen and (max-width: 876px) {
@@ -230,6 +285,7 @@
 
     .footer__block {
         flex-basis: 50%;
+        margin-right: 0 !important;
     }
 
     .footer__block__title {
@@ -307,6 +363,7 @@
         background: no-repeat url('../images/main__bg__image.png');
         background-size: cover;
         padding-bottom: 50px;
+        color: #ffffff;
     }
 }
 
@@ -323,5 +380,43 @@
 
     #congratulations .close-modal {
         top: 10px;
+    }
+
+    .box__send-contact__input {
+        font-size: 12px;
+    }
+
+    .box__send-contact__btn {
+        font-size: 13px;
+        clip-path: polygon(45px 0%, 100% 50%, 45px 100%, 0% 100%, 0% 0%, 0% 0%);
+    }
+
+    .hexagon__shadow.send-contact {
+        flex-basis: 65px;
+    }
+
+    .box__send-contact {
+        width: 80%;
+        height: 55px;
+    }
+
+    .send-contact__input {
+        flex-basis: 230px;
+    }
+
+    .buttons-group {
+        justify-content: center;
+    }
+
+    .section__portfolio__filter a {
+        font-size: 11px;
+    }
+
+    .section__description, .service__hexagon__title {
+        font-size: 16px;
+    }
+
+    .page__description__left {
+        width: 90% !important;
     }
 }

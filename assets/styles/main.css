@@ -130,11 +130,15 @@ a:hover {
 }
 
 .menu__item.active,
+.section__portfolio__filter > .active > a {
+    text-decoration: underline;
+}
+
+.menu__item.active,
 .menu__item:hover,
 .section__portfolio__filter > .active > a,
 .section__portfolio__filter > li:hover a {
     color: #FFC837;
-    text-decoration: underline;
 }
 
 .menu > li:not(:last-child) {
@@ -211,13 +215,14 @@ a:hover {
 .top__section-right__buttons {
     width: 167px;
     position: fixed;
-    top: 80%;
+    bottom: 5%;
     right: 30px;
     z-index: 7;
 }
 
 .hexagon__shadow:hover > .hexagon__button:before {
-    background: transparent;
+    /*background: transparent;*/
+    background: var(--main-bg-gradient);
 }
 
 .hexagon__shadow {
@@ -248,6 +253,7 @@ a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    height: 70%;
 }
 
 .logo__container {
@@ -495,6 +501,7 @@ a:hover {
 .service__hexagon {
     height: 180px;
     width: 150px;
+    margin: 0 auto;
     position: relative;
     background: #E0E0E0;
     transition: all .3s ease-out;
@@ -542,7 +549,7 @@ a:hover {
     width: 61px;
     height: 61px;
     left: 50%;
-    top: 45%;
+    top: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
 }
@@ -574,6 +581,7 @@ a:hover {
 }
 
 .section__portfolio__filter {
+    display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
@@ -672,7 +680,6 @@ a:hover {
     margin: 0 auto;
     border: none;
     position: relative;
-    background: var(--main-bg-gradient);
     -webkit-clip-path: polygon(89% 4%, 99% 49%, 89% 96%, 11% 96%, 1% 50%, 11% 4%);
     clip-path: polygon(89% 4%, 99% 49%, 89% 96%, 11% 96%, 1% 50%, 11% 4%);
 }
@@ -700,10 +707,12 @@ a:hover {
     box-shadow: 0 0 10px rgba(174, 174, 174, 0.28);
     padding-bottom: 70px;
     cursor: pointer;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-.section__pricing__plan:hover .hexagon__transparent:before {
-    background-color: transparent;
+.section__pricing__plan:hover button.hexagon__transparent:before {
+    background: var(--main-bg-gradient);
 }
 
 .section__pricing__plan:hover .hexagon__button {
@@ -790,10 +799,6 @@ a:hover {
     background: #555;
 }
 
-.hexagon__transparent {
-    background: var(--main-bg-gradient);
-}
-
 .hexagon__transparent:before {
     top: 0;
     left: 0;
@@ -852,6 +857,44 @@ a:hover {
     margin: 0 10px;
 }
 
+.section__project__slide > .slick-arrow,
+.modal__slider > .slick-arrow,
+.section__partners > .slick-arrow {
+    display: inline-block;
+    z-index: 55;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid var(--primary-text-color);
+    color: transparent;
+    font-size: 0;
+    background: no-repeat url("../images/icons/arrow-orange.svg");
+    background-position: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.section__partners > .slick-arrow:hover {
+    background: no-repeat url("../images/icons/arrow-white.svg"), linear-gradient(89.93deg, #FF8008 -65.4%, #FFC837 99.88%, rgba(255, 255, 255, 0) 99.88%, #FFC837 99.88%);
+    border: none;
+    background-position: 50%;
+    transform: translateX(-50%) !important;
+}
+
+.section__partners > .slick-next {
+    transform: translateX(-50%) rotate(180deg) !important;
+}
+
+.section__partners > .slick-prev:hover {
+    transform: translateX(-50%) rotate(180deg) !important;
+}
+
+.section__partners > .slick-next,
+.section__partners > .slick-prev {
+    display: none !important;
+}
+
 .section__partners__slide .slick-slide img {
     filter: grayscale(100%);
     width: 100%;
@@ -865,7 +908,7 @@ a:hover {
 }
 
 /* Slick slider */
-.section__partners .slick-prev, .section__partners .slick-next {
+.section__partners > .hexagon__shadow > .slick-prev, .section__partners > .hexagon__shadow > .slick-next {
     border: none;
     -webkit-clip-path: polygon(55px 0%, 100% 50%, 55px 100%, 15px 100%, 0% 50%, 15px 0%);
     clip-path: polygon(55px 0%, 100% 50%, 55px 100%, 15px 100%, 0% 50%, 15px 0%);
@@ -875,25 +918,29 @@ a:hover {
 }
 
 
-.section__partners > .hexagon__shadow {
+.section__partners > .hexagon__shadow,
+.section__partners > .slick-arrow {
     position: absolute;
     bottom: -100px;
     transform: translateX(-50%);
+    top: inherit;
 }
 
 .section__partners > .hexagon__shadow:hover > .hexagon__button:before {
     background-color: transparent;
 }
 
-.section__partners > .hexagon__shadow.prev {
+.section__partners > .hexagon__shadow.prev,
+.section__partners > .slick-prev {
     left: calc(50% - 50px);
 }
 
-.section__partners > .hexagon__shadow.next {
+.section__partners > .hexagon__shadow.next,
+.section__partners > .slick-next {
     left: calc(50% + 50px);
 }
 
-.section__partners .slick-prev:after {
+.section__partners > .hexagon__shadow > .slick-prev:after {
     content: url("../images/icons/arrow-left.svg");
     position: absolute;
     top: 50%;
@@ -901,7 +948,7 @@ a:hover {
     transform: translate(-50%, -50%);
 }
 
-.section__partners .slick-next:after {
+.section__partners > .hexagon__shadow > .slick-next:after {
     content: url("../images/icons/arrow-right.svg");
     position: absolute;
     top: 50%;
@@ -925,7 +972,7 @@ a:hover {
     background: #000000;
     margin-top: 80px;
     position: relative;
-    z-index: 5;
+    z-index: 8;
 }
 
 .footer__content {
