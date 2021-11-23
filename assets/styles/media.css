@@ -365,6 +365,14 @@
         padding-bottom: 50px;
         color: #ffffff;
     }
+
+    .about__project__subtitle {
+        font-size: 20px;
+    }
+
+    .project__name {
+        font-size: 25px;
+    }
 }
 
 /*mobile*/
