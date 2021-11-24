@@ -524,7 +524,9 @@
                     <div class="create__plan__row">
                         <p class="create__plan__row__text text-default">Create your plan and get a discount</p>
                         <div class="hexagon__shadow additional-action">
-                            <button class="hexagon__button hexagon__transparent">Create New</button>
+                            <button class="hexagon__button hexagon__transparent" data-toggle="modal"
+                                    data-target="#createPlan">Create New
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -650,6 +652,108 @@
                     <div class="hexagon__shadow cong__form__send">
                         <button class="hexagon__button hexagon__transparent">Send</button>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Create your plan Modal -->
+<div class="modal fade" id="createPlan" tabindex="-1" role="dialog" aria-labelledby="createPlan"
+     aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body createPlan">
+                <div class="section__header">
+                    <p class="section__title popup__title">Create your plan</p>
+                    <img src="assets/images/icons/line.svg" class="section__title__line" alt="header">
+                </div>
+                <div class="create__plan__modal">
+                    <div class="modal__service__item">
+                        <div class="hexagon__shadow">
+                            <span class="service__options__count">1</span>
+                            <span class="service__options__close">X</span>
+                            <button class="hexagon__button hexagon__transparent text-default">
+                                <img src="./assets/images/icons/branding-service-icon.svg" width="30" height="30"
+                                     class="modal__service__icon"
+                                     alt="Branding">Branding
+                            </button>
+                            <ul class="section__service__list create__plan__option">
+                                <li>
+                                    <span class="section__service__list__item text-default">Naming and copywriting</span>
+                                    <ul class="create__plan__sub-options">
+                                        <li class="service__selected__option d-flex active">
+                                            <span>Naming</span>
+                                            <div class="service__options__counter d-flex">
+                                                <span class="counter__btn decrease__count">-</span>
+                                                <span>3</span>
+                                                <span class="counter__btn increase__count">+</span>
+                                            </div>
+                                        </li>
+                                        <li>Copywriting</li>
+                                    </ul>
+                                </li>
+                                <li><span class="section__service__list__item text-default">Visual Identity</span>
+                                </li>
+                                <li><span class="section__service__list__item text-default">Logos / Visual
+                                    elements</span></li>
+                                <li><span class="section__service__list__item text-default">Brand strategy</span>
+                                </li>
+                                <li><span class="section__service__list__item text-default">Visual Identity</span>
+                                </li>
+                                <li><span class="section__service__list__item text-default">Logos / Visual
+                                    elements</span></li>
+                                <li><span class="section__service__list__item text-default">Brand strategy</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="modal__service__item">
+                        <div class="hexagon__shadow">
+                            <button class="hexagon__button hexagon__transparent text-default">
+                                <img src="./assets/images/icons/web-service-icon.svg" width="30" height="30"
+                                     class="modal__service__icon" alt="Web">Web
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal__service__item">
+                        <div class="hexagon__shadow">
+                            <button class="hexagon__button hexagon__transparent text-default">
+                                <img src="./assets/images/icons/smm-service-icon.svg" class="modal__service__icon"
+                                     alt="SMM">SMM
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal__service__item">
+                        <div class="hexagon__shadow">
+
+                            <button class="hexagon__button hexagon__transparent text-default">
+                                <img src="./assets/images/icons/photo-service-icon.svg" class="modal__service__icon"
+                                     alt="Media">Photo
+                                / Video
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal__service__item">
+                        <div class="hexagon__shadow">
+                            <button class="hexagon__button hexagon__transparent text-default">
+                                <img src="./assets/images/icons/typography-service-icon.svg"
+                                     class="modal__service__icon"
+                                     alt="Marketing">Marketing
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal__service__item">
+                        <div class="hexagon__shadow">
+                            <button class="hexagon__button hexagon__transparent text-default">
+                                <img src="./assets/images/icons/design-service-icon.svg" class="modal__service__icon"
+                                     alt="Marketing">Graphic Design
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="hexagon__shadow createPlan__submit">
+                    <button class="hexagon__button hexagon text-default">Submit</button>
                 </div>
             </div>
         </div>

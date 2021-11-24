@@ -986,6 +986,10 @@ a:hover {
     height: 170px;
 }
 
+.footer__logo {
+    text-align: center;
+}
+
 .footer__block__title {
     font-family: "Montserrat", sans-serif;
     font-size: 35px;
@@ -1228,4 +1232,171 @@ a:hover {
 
 .footer__block__list {
     padding-left: 0;
+}
+
+.popup__title {
+    font-size: 30px;
+}
+
+#createPlan > .modal-dialog {
+    max-width: inherit;
+    width: 90%;
+}
+
+.create__plan__modal {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 0 33%;
+}
+
+.modal__service__item {
+    flex-basis: 33%;
+    margin-bottom: 25px;
+    text-align: center;
+    position: relative;
+}
+
+.modal__service__item > .active > .hexagon__button {
+    clip-path: none;
+    background: #ffff;
+    color: #000000;
+}
+
+.modal__service__item > .hexagon__shadow {
+    display: inline-block;
+    filter: drop-shadow(0px 3px 3px rgba(131, 131, 131, 0.3));
+}
+
+.modal__service__item > .hexagon__shadow:not(.active):hover .hexagon__button {
+    color: white;
+}
+
+.modal__service__icon {
+    width: 30px;
+    margin-right: 15px;
+}
+
+.modal__service__item > .hexagon__shadow {
+    width: 100%;
+    max-width: 405px;
+    height: 98px;
+}
+
+.service__options__count {
+    width: 40px;
+    height: 41px;
+    line-height: 41px;
+    display: inline-block;
+    background: no-repeat url("../images/icons/hexagon-small-white.svg");
+    background-size: cover;
+    color: #FFA722;
+    position: absolute;
+    z-index: 1;
+    top: -20px;
+    right: 60px;
+}
+
+.create__plan__modal .hexagon__button {
+    width: 100%;
+    height: 100%;
+    font-size: 22px;
+}
+
+.createPlan {
+    padding-top: 80px !important;
+}
+
+.createPlan__submit > .hexagon__button {
+    background: var(--main-bg-gradient);
+    margin-top: 110px;
+    font-size: 24px;
+}
+
+.modal__service__item > .active {
+    width: 500px;
+    height: inherit;
+    max-width: inherit;
+    padding: 15px 60px;
+    background: #ffff;
+    position: absolute;
+    z-index: 11;
+    left: 0;
+}
+
+.service__options__close {
+    display: inline-block;
+    width: 15px;
+    font-size: 22px;
+    position: absolute;
+    z-index: 2;
+    right: 20px;
+    top: 13px;
+    cursor: pointer;
+}
+
+.active > .create__plan__option,
+.active > .service__options__close {
+    display: block;
+}
+
+.active > .service__options__count,
+.service__options__close {
+    display: none;
+}
+
+.create__plan__option {
+    display: none;
+    margin-top: 60px;
+    text-align: left;
+}
+
+.create__plan__option > li {
+    margin-bottom: 20px;
+}
+
+.create__plan__option li.active > .section__service__list__item {
+    color: #FFC837;
+}
+
+.create__plan__option .section__service__list__item:hover {
+    text-decoration: none;
+}
+
+.create__plan__sub-options {
+    display: none;
+}
+
+.create__plan__option li.active > .create__plan__sub-options {
+    display: block;
+}
+
+.counter__btn {
+    width: 22px;
+    height: 22px;
+    line-height: 19px;
+    text-align: center;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-image: url("../images/icons/hexagon-counter-passive.svg");
+    background-size: cover;
+}
+
+.service__options__counter {
+    flex-direction: row;
+    margin-left: 15px;
+}
+
+.service__selected__option.active .counter__btn {
+    background-image: url("../images/icons/hexagon-counter-active.svg");
+}
+
+.decrease__count {
+    margin-right: 15px;
+}
+
+.increase__count {
+    margin-left: 15px;
 }

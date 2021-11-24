@@ -25,7 +25,7 @@ $(document).ready(function () {
     $('.over-layer').on('click', function () {
         $('.full__screen').addClass('active');
         $('.top__video__close').css('display', 'block');
-        $("html, body").animate({ scrollTop: 0 }, "slow");
+        $("html, body").animate({scrollTop: 0}, "slow");
 
         $('body').css('overflow', 'hidden');
     });
@@ -82,6 +82,38 @@ $(document).ready(function () {
         $('.menu').find('.active').removeClass('active');
         $(this).addClass('active');
     });
+
+    $('.create__plan__modal .hexagon__shadow').on('click', function () {
+        const prevOpened = $('.create__plan__modal').find('.active');
+
+        if (prevOpened[0]) {
+            prevOpened.removeClass('active')
+        }
+
+        $(this).addClass('active');
+    })
+
+    $('.service__options__close').on('click', function (e) {
+        e.stopPropagation();
+        $(this).parent().removeClass('active');
+    })
+
+    $('.create__plan__option .section__service__list__item').on('click', function (e) {
+        e.stopPropagation();
+
+        const prevOpened = $('.create__plan__option').find('.active');
+        const parentNode = $(this).parent();
+
+        if (parentNode[0] === prevOpened[0]) {
+            parentNode.removeClass('active');
+
+            return;
+        } else if (prevOpened[0]) {
+            prevOpened.removeClass('active')
+        }
+
+        parentNode.addClass('active');
+    })
 });
 
 
