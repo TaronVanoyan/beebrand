@@ -649,7 +649,7 @@ a:hover {
 }
 
 .portfolio__about__title {
-    font-size: 2rem;
+    font-size: 30px;
     line-height: 56px;
 }
 
@@ -1399,4 +1399,19 @@ a:hover {
 
 .increase__count {
     margin-left: 15px;
+}
+
+.section__load__additional {
+    display: none;
+    font-size: 23px;
+    margin-top: 10px !important;
+    margin-bottom: 60px;
+}
+
+.opened {
+    height: inherit !important;
+}
+
+.read__more__desc {
+    font-size: 13px;
 }

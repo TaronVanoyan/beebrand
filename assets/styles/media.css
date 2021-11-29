@@ -1,3 +1,10 @@
+@media screen and (max-width: 1200px) {
+    .team__member__image > .service__hexagon {
+        height: 100px;
+        width: 90px;
+    }
+}
+
 @media screen and (min-width: 1140px) {
     .section__pricing__plan__header {
         font-size: 2.8em;
@@ -22,11 +29,20 @@
     }
 
     .section__title, .portfolio__about__title {
-        font-size: 25px;
+        font-size: 20px;
+    }
+
+    .portfolio__about__title {
+        line-height: inherit;
+    }
+
+    .portfolio__about__icon {
+        margin-top: 0;
     }
 
     .portfolio__about__subtitle {
         font-size: 13px;
+        margin-top: inherit;
     }
 
     .section__portfolio__filter a {
@@ -52,7 +68,7 @@
     }
 
     .service__hexagon {
-        height: 140px;
+        height: 130px;
         width: 120px;
         margin: 0 auto;
     }
@@ -78,6 +94,45 @@
     .footer__block__list__item {
         margin-bottom: 20px;
     }
+
+    .footer__content {
+        padding: 50px 10px;
+    }
+
+    .team__member__name {
+        font-size: 20px;
+    }
+
+    .team__member {
+        padding: 35px 15px 25px 15px;
+    }
+
+    .team__member__hexagon {
+        left: 15px;
+    }
+
+    .about__project__subtitle {
+        display: none;
+    }
+
+    .modal__service__item > .hexagon__shadow {
+        max-width: 250px;
+        height: 58px;
+    }
+
+    .create__plan__modal .hexagon__button {
+        font-size: 17px;
+    }
+
+    .modal__service__item > .active {
+        width: 366px;
+        max-width: inherit;
+        height: inherit;
+    }
+
+    .create__plan__option {
+        margin-top: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -96,9 +151,17 @@
         width: 750px;
         height: 650px;
     }
+
+    .page__description__hexagon {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    .section {
+        margin-top: 60px !important;
+    }
+
     .top__section-right {
         display: block;
     }
@@ -185,6 +248,7 @@
 
     .project-inner__about {
         text-align: center;
+        padding: 10px;
     }
 
     .project__name {
@@ -239,6 +303,16 @@
         margin: 0 auto;
     }
 
+    .footer__block:not(:last-child) {
+        flex-basis: 100%;
+    }
+
+    .footer__services > .footer__block__list__item,
+    .contacts > .footer__block__list__item {
+        width: 300px;
+        margin: 20px auto;
+    }
+
     .hx-0 {
         left: 10px;
         top: -100px;
@@ -262,6 +336,31 @@
     .hx-4 {
         top: 23px;
         left: 11px;
+    }
+
+    .section__description {
+        flex-basis: 100%;
+        margin-left: inherit;
+    }
+
+    .footer__block:nth-child(2) {
+        display: none;
+    }
+
+    .team__member {
+        margin: 10px 0;
+    }
+
+    .create__plan__modal .hexagon__button {
+        font-size: 12px;
+    }
+
+    .modal__service__item {
+        flex-basis: 50%;
+    }
+
+    .createPlan__submit > .hexagon__button {
+        font-size: 18px;
     }
 }
 
@@ -373,6 +472,21 @@
     .project__name {
         font-size: 25px;
     }
+
+    .footer__block__list__item.phone__number:before,
+    .footer__block__list__item.location:before,
+    .footer__block__list__item.mail:before,
+    .footer__services > .footer__block__list__item:before {
+        left: 0;
+    }
+
+    .section__blog__header-left, .section__blog__header-left > .section__title {
+        text-align: center;
+    }
+
+    .section__blog__content {
+        margin-top: 0 !important;
+    }
 }
 
 /*mobile*/
@@ -426,5 +540,86 @@
 
     .page__description__left {
         width: 90% !important;
+        height: 130px;
+    }
+
+    .page__description__hexagon {
+        width: 100px;
+        height: 110px;
+    }
+
+    .hx-1 {
+        top: -153px;
+        left: 100px;
+    }
+
+    .hx-2 {
+        left: 190px;
+    }
+
+    .hx-3 {
+        top: -44px;
+        left: 100px;
+    }
+
+    .hx-4 {
+        top: 6px;
+        left: 11px;
+    }
+
+    .section__load__additional {
+        display: block;
+    }
+
+    .page__description__text {
+        font-size: 17px;
+    }
+
+    .page__description__text {
+        height: 88px;
+        overflow: hidden;
+    }
+
+    .about-project__title {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .checkbox-group {
+        flex-direction: column;
+    }
+
+    .product-type__button {
+        border: none;
+        padding: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .product-type__button:hover {
+        background-color: transparent;
+        color: #FFC837;
+    }
+
+    .product-type__button.active {
+        font-weight: bold;
+        color: #FFC837;
+    }
+
+    .modal__service__item {
+        flex-basis: 100%;
+    }
+
+    .modal__service__item > .active {
+        width: 100%;
+    }
+
+    #createPlan > .modal-dialog {
+        margin: 30px auto;
+    }
+
+    .congratulations.modal-body {
+        padding-top: 60px;
+        margin-top: 60px;
     }
 }

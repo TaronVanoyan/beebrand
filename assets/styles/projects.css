@@ -10,7 +10,8 @@
 .section__description {
     max-width: inherit;
     text-align: left;
-    flex-basis: 75%;
+    flex-basis: 70%;
+    margin-left: 30px;
 }
 
 .about__project__subtitle {

@@ -114,6 +114,10 @@ $(document).ready(function () {
 
         parentNode.addClass('active');
     })
+
+    $('.read__more__desc').on('click', function () {
+        $('.page__description__text').toggleClass('opened')
+    })
 });
 
 

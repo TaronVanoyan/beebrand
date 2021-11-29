@@ -1,9 +1,13 @@
 .about-project__title {
     font-weight: 600;
     font-size: 22px;
-    line-height: 20px;
+    line-height: inherit;
     color: #000000;
     margin-bottom: 0;
+}
+
+.container {
+    padding-top: 70px;
 }
 
 .section__row {
