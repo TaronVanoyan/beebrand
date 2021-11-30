@@ -622,4 +622,8 @@
         padding-top: 60px;
         margin-top: 60px;
     }
+
+    .personal__info {
+        max-width: inherit !important;
+    }
 }
