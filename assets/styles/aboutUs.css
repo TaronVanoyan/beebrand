@@ -68,7 +68,7 @@
 }
 
 .team__member:hover .team__member__hexagon {
-    top: -50px;
+    /*top: -50px;*/
 }
 
 .team__member__hexagon:before {
