@@ -496,15 +496,13 @@ a:hover {
     text-decoration: underline;
 }
 
+.section__services__item:hover .service__hexagon__title {
+    color: #FFC523;
+}
+
 .section__services__item:hover .service__hexagon {
     background: var(--main-bg-gradient);
     transform: rotate(90deg);
-}
-
-.section__services__item:hover .service__hexagon__title {
-    background: -webkit-linear-gradient(89.93deg, #FF8008 -65.4%, #FFC837 99.88%, rgba(255, 255, 255, 0) 99.88%, #FFC837 99.88%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .service__hexagon {
@@ -967,8 +965,8 @@ a:hover {
 }
 
 .section__partners .slick-prev:before, .section__partners .slick-next:before {
-    -webkit-clip-path: polygon(54px 2px, 68px 35px, 54px 68px, 16px 68px, 2px 35px, 16px 2px);
-    clip-path: polygon(54px 2px, 68px 35px, 54px 68px, 16px 68px, 2px 35px, 16px 2px);
+    -webkit-clip-path: polygon(56px 0px, 70px 35px, 60px 70px, 12px 70px, 0px 35px, 0px 0px);
+    clip-path: polygon(56px 0px, 70px 35px, 60px 70px, 12px 70px, 0px 35px, 0px 0px);
 }
 
 .slick-track {
@@ -1009,7 +1007,8 @@ a:hover {
 }
 
 .footer__block__list__item {
-    margin-bottom: 15px;
+    padding-left: 25px;
+    margin-bottom: 18px;
     color: #ffffff;
     font-family: Montserrat, sans-serif;
     font-size: 20px;
@@ -1034,11 +1033,12 @@ a:hover {
     width: 14px;
     height: 14px;
     position: absolute;
-    left: -32px;
+    left: 0;
+    text-align: center;
 }
 
 .contacts > .footer__block__list__item {
-    padding-left: 15px;
+    padding-left: 40px;
 }
 
 .footer__block__list__item.phone__number:before,
@@ -1047,7 +1047,8 @@ a:hover {
     width: 25px;
     height: 25px;
     position: absolute;
-    left: -32px;
+    left: 0;
+    text-align: center;
 }
 
 .footer__block__list__item.phone__number:before {

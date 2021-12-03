@@ -11,7 +11,7 @@
 }
 
 .section__row {
-    margin-top: 50px !important;
+    margin-top: 35px !important;
 }
 
 .checkbox-item {
@@ -101,4 +101,24 @@ textarea.project__details {
 
 .send__row > .hexagon__shadow {
     display: inline-block;
+}
+
+.upload-file-label {
+    display: flex;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    line-height: 16px;
+    color: #636363;
+}
+
+.upload-file-label:before {
+    content: url("../images/icons/attach-file-icon.svg");
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.upload-file {
+    display: none;
 }
