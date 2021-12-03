@@ -628,8 +628,7 @@
         max-width: inherit !important;
     }
 
-    .footer__social > .footer__block__list__item {
-        padding-left: 5px;
+    .footer__social > .footer__block__list__item:not(:last-child) {
         margin-right: 5px;
     }
 }
