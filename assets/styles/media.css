@@ -133,6 +133,10 @@
     .create__plan__option {
         margin-top: 20px;
     }
+
+    .menu > li:not(:last-child) {
+        padding-right: 20px;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -151,15 +155,11 @@
         width: 750px;
         height: 650px;
     }
-
-    .page__description__hexagon {
-        height: 150px;
-    }
 }
 
 @media screen and (max-width: 768px) {
-    .section {
-        margin-top: 60px !important;
+    div.row.section {
+        margin-top: 60px;
     }
 
     .top__section-right {
@@ -181,18 +181,12 @@
         justify-content: flex-start;
     }
 
-    .menu, .mobile__menu {
+    .menu__container {
         display: none;
     }
 
     .mobile__menu__icon {
         display: block;
-    }
-
-    .page__description__hexagon {
-        height: 130px;
-        font-size: 14px;
-        position: absolute;
     }
 
     .top__section-right__buttons .hexagon__button {
@@ -296,38 +290,6 @@
         display: none !important;
     }
 
-    .page__description__left {
-        height: 200px;
-        width: 60% !important;
-        position: relative;
-        margin: 0 auto;
-    }
-
-    .hx-0 {
-        left: 10px;
-        top: -100px;
-    }
-
-    .hx-1 {
-        left: 114px;
-        top: -160px;
-    }
-
-    .hx-2 {
-        left: 216px;
-        top: -97px;
-    }
-
-    .hx-3 {
-        top: -37px;
-        left: 113px;
-    }
-
-    .hx-4 {
-        top: 23px;
-        left: 11px;
-    }
-
     .section__description {
         flex-basis: 100%;
         margin-left: inherit;
@@ -351,6 +313,17 @@
 
     .createPlan__submit > .hexagon__button {
         font-size: 18px;
+    }
+
+    .menu__container {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background: white;
+        width: 100%;
+        padding: 20px;
+        text-align: left;
+        flex-direction: column-reverse;
     }
 }
 
@@ -393,7 +366,11 @@
     }
 
     .nav__menu {
-        padding: 0 60px;
+        padding: 0 40px;
+    }
+
+    .menu__item, .menu__lang__selected {
+        font-size: 13px;
     }
 
     .blog__main__video {
@@ -406,8 +383,8 @@
         padding-top: 20px;
     }
 
-    .section {
-        margin-top: 100px !important;
+    .row.section {
+        margin-top: 100px;
     }
 
     .video__container, .logo__container {
@@ -539,35 +516,6 @@
         font-size: 16px;
     }
 
-    .page__description__left {
-        width: 90% !important;
-        height: 130px;
-    }
-
-    .page__description__hexagon {
-        width: 100px;
-        height: 110px;
-    }
-
-    .hx-1 {
-        top: -153px;
-        left: 100px;
-    }
-
-    .hx-2 {
-        left: 190px;
-    }
-
-    .hx-3 {
-        top: -44px;
-        left: 100px;
-    }
-
-    .hx-4 {
-        top: 6px;
-        left: 11px;
-    }
-
     .section__load__additional {
         display: block;
     }
@@ -630,5 +578,9 @@
 
     .footer__social > .footer__block__list__item:not(:last-child) {
         margin-right: 5px;
+    }
+
+    .nav__menu {
+        padding: 0 15px;
     }
 }

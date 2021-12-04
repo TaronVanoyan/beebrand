@@ -85,6 +85,16 @@ a:hover {
     position: fixed;
     width: 100%;
     z-index: 555;
+    transition: all .5s ease-in-out;
+}
+
+.nav__menu.scrolled {
+    background: transparent;
+    box-shadow: none;
+}
+
+.nav__menu.scrolled + .container {
+    padding-top: 0;
 }
 
 .menu__logo {
@@ -98,6 +108,7 @@ a:hover {
     flex-wrap: wrap;
     justify-content: center;
     padding: 0 15px;
+    flex: auto;
 }
 
 .mobile__menu__icon {
@@ -105,16 +116,13 @@ a:hover {
     cursor: pointer;
 }
 
-.menu.mobile__menu {
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    background: white;
-    width: 100%;
-    display: block;
-    text-align: center;
-    padding: 20px;
+.menu__container.active {
+    display: flex;
+}
+
+.menu__container {
+    display: flex;
+    flex: auto;
 }
 
 .mobile__menu > li:not(:last-child) {
@@ -197,13 +205,31 @@ a:hover {
     display: none;
 }
 
+.mobile__menu {
+    padding: 0;
+    flex-direction: column;
+}
+
+.mobile__menu > li {
+    padding: 10px 0;
+}
+
+.menu__container .menu__lang__list {
+    left: 0;
+}
+
+.menu__container.active > .menu__lang {
+    border-bottom: 1px solid #EAEAEA;
+    padding-bottom: 10px;
+}
+
 .container {
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
-.section {
-    margin-top: 100px !important;
+.row.section {
+    margin-top: 100px;
 }
 
 .top__section-right {
@@ -317,16 +343,16 @@ a:hover {
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 25px 100%, 0% 50%, 25px 0%);
 }
 
-::placeholder {
+.box__send-contact__input::placeholder {
     color: rgba(0, 0, 0, 0.3);
     opacity: 1; /* Firefox */
 }
 
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+.box__send-contact__input:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: rgba(0, 0, 0, 0.3);
 }
 
-::-ms-input-placeholder { /* Microsoft Edge */
+.box__send-contact__input::-ms-input-placeholder { /* Microsoft Edge */
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -422,7 +448,7 @@ a:hover {
 }
 
 .section__services {
-    margin-top: 100px !important;
+    margin-top: 50px !important;
 }
 
 .service__default__content {
@@ -446,32 +472,50 @@ a:hover {
 }
 
 .section__services__item-default {
+    width: 100%;
+    height: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    /*transition: all .3 ease-in-out;*/
 }
 
 .section__services__item-turned {
-    display: none;
-    flex-direction: column;
-    transform: rotateY(-180deg);
-}
-
-.section__services__item.active > .section__services__item-default {
-    display: none;
-}
-
-.section__services__item.active > .section__services__item-turned {
+    width: 100%;
+    height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    transform: rotateY(-180deg);
+    position: absolute;
+    z-index: -1;
+    background: #ffff;
+    opacity: 0;
+    transition: all 1.5s ease-in-out;
+    text-align: center;
 }
 
 .section__services__item.active {
     transform: rotateY(180deg);
+}
+
+.section__services__item.active > .section__services__item-default {
     padding: 20px 0;
+}
+
+.section__services__item.active > .section__services__item-turned {
+    z-index: 2;
+    opacity: 1;
+    transition: all 1.5s ease-in-out;
 }
 
 .section__service__list {
     padding-left: 0;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: left;
 }
 
 .section__services__item__title {
@@ -743,7 +787,7 @@ a:hover {
 }
 
 .section__pricing {
-    margin-top: 30px !important;
+    margin-top: 50px !important;
 }
 
 .section__pricing__plan__header {

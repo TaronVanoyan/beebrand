@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    const navMenuItem = $('.nav__menu');
+
     $('.section__partners__slide').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
@@ -38,7 +40,9 @@ $(document).ready(function () {
     });
 
     $('.mobile__menu__icon').on('click', function () {
-        $('.menu').toggleClass('mobile__menu')
+        $('.menu').toggleClass('mobile__menu');
+        $('.menu__container').toggleClass('active');
+        navMenuItem.removeClass('scrolled');
     })
 
     $('.section__services__item').on('click', function (elem) {
@@ -118,6 +122,23 @@ $(document).ready(function () {
     $('.read__more__desc').on('click', function () {
         $('.page__description__text').toggleClass('opened')
     })
+
+    // let isNotTop = true
+    // if ($(window).scrollTop() === 0) {
+    //     navMenuItem.addClass('scrolled');
+    // } else {
+    //     navMenuItem.removeClass('scrolled');
+    // }
+    //
+    // $(window).scroll(function () {
+    //     if (isNotTop && $(window).scrollTop() !== 0) {
+    //         navMenuItem.removeClass('scrolled');
+    //         isNotTop = false
+    //     } else if ($(window).scrollTop() === 0) {
+    //         navMenuItem.addClass('scrolled');
+    //         isNotTop = true
+    //     }
+    // });
 });
 
 

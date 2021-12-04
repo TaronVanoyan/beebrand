@@ -2,30 +2,22 @@
     margin: 50px 0 0 0;
 }
 
-.page__description {
-    margin-top: 175px !important;
-    position: relative;
+.row.page__description {
+    margin-top: 130px;
 }
 
 .page__description__text {
     text-transform: lowercase;
     text-align: center;
+    margin-left: 40px;
+    font-size: 20px;
 }
 
-.page__description__left {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+.portfolio__hexagons {
+    margin-bottom: 60px;
 }
 
-.page__description__hexagon {
-    width: 130px;
-    height: 120px;
-    background: var(--main-bg-gradient);
-    transform: rotate(90deg);
-}
-
-.page__description__hexagon:hover.service__hexagon:before {
+.container_hx > div:hover.service__hexagon:before {
     background: transparent;
 }
 
@@ -35,25 +27,70 @@
     top: 50%;
     width: 100%;
     display: inline-block;
-    transform: translate(-50%, -50%) rotate(-90deg);
+    transform: translate(-50%, -50%);
     text-align: center;
     cursor: pointer;
 }
 
-.hx-1, .hx-3 {
-    top: -67px;
+.main {
+    display: flex;
+    --s: 116px; /* size  */
+    --m: 4px; /* margin */
+    --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
 }
 
-.hx-2, .hx-4 {
-    top: 0;
+.container_hx {
+    font-size: 0; /*disable white space between inline block element */
+}
+
+.container_hx > div {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s) * 1.1547);
+    display: inline-block;
+    font-size: initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    margin-bottom: calc(var(--m) - var(--s) * 0.2885);
+    background: var(--main-bg-gradient);
+}
+
+.container_hx::before {
+    content: "";
+    width: calc(var(--s) / 2 + var(--m));
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(
+            #0000 0 calc(var(--f) - 3px),
+            #000 0 var(--f));
+}
+
+@media screen and (max-width: 1024px) {
+    .row.page__description {
+        margin-top: 70px;
+    }
+
+    .main {
+        --s: 94px; /* size  */
+    }
+
+    .page__description__text {
+        margin-left: 0;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 380px) and (max-width: 435px) {
+    .portfolio__hexagons {
+        margin-bottom: 110px;
+    }
 }
 
 @media screen and (max-width: 576px) {
-    .hx-0 {
-        margin-left: 25px;
+    .row.page__description {
+        margin-top: 20px;
     }
 
-    .hx-4 {
-        margin-right: 30px;
+    .main {
+        --s: 80px; /* size  */
     }
 }
