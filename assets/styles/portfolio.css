@@ -64,6 +64,10 @@
             #000 0 var(--f));
 }
 
+.service__hexagon.active:before {
+    background: transparent;
+}
+
 @media screen and (max-width: 1024px) {
     .row.page__description {
         margin-top: 70px;

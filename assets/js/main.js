@@ -123,22 +123,58 @@ $(document).ready(function () {
         $('.page__description__text').toggleClass('opened')
     })
 
-    // let isNotTop = true
-    // if ($(window).scrollTop() === 0) {
-    //     navMenuItem.addClass('scrolled');
-    // } else {
-    //     navMenuItem.removeClass('scrolled');
-    // }
-    //
-    // $(window).scroll(function () {
-    //     if (isNotTop && $(window).scrollTop() !== 0) {
-    //         navMenuItem.removeClass('scrolled');
-    //         isNotTop = false
-    //     } else if ($(window).scrollTop() === 0) {
-    //         navMenuItem.addClass('scrolled');
-    //         isNotTop = true
-    //     }
-    // });
+    $('.portfolio__hexagons .service__hexagon').on('click', function () {
+        let datalist = $('.section__portfolio .portfolio');
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+            datalist.fadeIn();
+            return;
+        }
+
+        $('.portfolio__hexagons .service__hexagon').removeClass('active');
+        $(this).addClass('active');
+
+        datalist.css({
+            display: 'none'
+        });
+
+        let targetValue = $(this).attr('data-target');
+        datalist.each(function (index, item) {
+            if ($(item).is(`[data-filter=${targetValue}]`)) {
+                $(item).fadeIn();
+            }
+        })
+    })
+
+    $('.section__services__item-turned').on('click', function () {
+        if ($(window).width() < 1024) {
+            return;
+        }
+        $(this).parent().parent().find('.section__services__item.active').removeClass('active');
+    });
+
+    $('.close-service').on('click', function () {
+        $(this).parent().parent().find('.section__services__item.active').removeClass('active');
+    })
+
+
+    let isNotTop = true
+    if ($(window).scrollTop() === 0) {
+        navMenuItem.addClass('scrolled');
+    } else {
+        navMenuItem.removeClass('scrolled');
+    }
+
+    $(window).scroll(function () {
+        if (isNotTop && $(window).scrollTop() !== 0) {
+            navMenuItem.removeClass('scrolled').addClass('scroll');
+            isNotTop = false
+        } else if ($(window).scrollTop() === 0) {
+            navMenuItem.addClass('scrolled').removeClass('scroll');
+            isNotTop = true
+        }
+    });
 });
 
 
