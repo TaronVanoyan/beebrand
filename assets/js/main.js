@@ -123,8 +123,8 @@ $(document).ready(function () {
         $('.page__description__text').toggleClass('opened')
     })
 
-    $('.portfolio__hexagons .service__hexagon').on('click', function () {
-        let datalist = $('.section__portfolio .portfolio');
+    $('[data-target]').on('click', function () {
+        let datalist = $('[data-filter]');
 
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
@@ -132,7 +132,7 @@ $(document).ready(function () {
             return;
         }
 
-        $('.portfolio__hexagons .service__hexagon').removeClass('active');
+        $('[data-target]').removeClass('active');
         $(this).addClass('active');
 
         datalist.css({
