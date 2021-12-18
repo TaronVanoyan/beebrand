@@ -95,6 +95,7 @@
     width: 80% !important;
     top: 50%;
     transform: translateY(-50%) !important;
+    margin: 0 auto !important;
 }
 
 .modal-content {
@@ -118,4 +119,21 @@
 .modal-body {
     height: 500px;
     padding: 0 !important;
+}
+
+@media screen and (max-width: 576px) {
+    .modal-body {
+        height: inherit;
+    }
+    .modal__slider > button.slick-arrow {
+        width: 30px;
+        height: 30px;
+
+    }
+    .slick-arrow:hover {
+        background: no-repeat url("../images/icons/arrow-white.svg") 60%/10px, linear-gradient(89.93deg, #FF8008 -65.4%, #FFC837 99.88%, rgba(255, 255, 255, 0) 99.88%, #FFC837 99.88%);
+    }
+    .modal__slider > button.slick-arrow:not(:hover) {
+        background-size: 10px;
+    }
 }
