@@ -133,7 +133,10 @@
     .slick-arrow:hover {
         background: no-repeat url("../images/icons/arrow-white.svg") 60%/10px, linear-gradient(89.93deg, #FF8008 -65.4%, #FFC837 99.88%, rgba(255, 255, 255, 0) 99.88%, #FFC837 99.88%);
     }
-    .modal__slider > button.slick-arrow:not(:hover) {
-        background-size: 10px;
+    button.slick-arrow:not(:hover) {
+        background-size: 10px !important;
+    }
+    .section__load__additional {
+        font-size: 13px;
     }
 }

@@ -741,6 +741,7 @@ a:hover {
     position: relative;
     -webkit-clip-path: polygon(89% 4%, 99% 49%, 89% 96%, 11% 96%, 1% 50%, 11% 4%);
     clip-path: polygon(89% 4%, 99% 49%, 89% 96%, 11% 96%, 1% 50%, 11% 4%);
+    color: #000000;
 }
 
 .additional-action {
