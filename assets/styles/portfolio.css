@@ -68,6 +68,11 @@
     background: transparent;
 }
 
+.nav__menu {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+}
+
 @media screen and (max-width: 1024px) {
     .row.page__description {
         margin-top: 70px;
@@ -96,5 +101,9 @@
 
     .main {
         --s: 80px; /* size  */
+    }
+
+    .hexagon__button {
+        font-size: 13px;
     }
 }

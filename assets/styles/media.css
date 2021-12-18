@@ -189,6 +189,10 @@
         margin-top: 60px;
     }
 
+    .menu__content {
+        flex-direction: column-reverse;
+    }
+
     .top__section-right {
         display: block;
     }
@@ -351,6 +355,45 @@
         padding: 20px;
         text-align: left;
         flex-direction: column-reverse;
+    }
+
+    .opened_menu .menu__container {
+        display: flex !important;
+    }
+
+    .menu > li:not(:last-child) {
+        padding-right: 0 !important;
+        padding: 10px 0;
+    }
+
+    .menu {
+        padding: 0;
+        flex-direction: column;
+        border-top: 1px solid #EAEAEA;
+    }
+
+    .menu__container {
+        box-shadow: 0 8px 6px -10px black;
+    }
+
+    .menu > li {
+        padding: 10px 0;
+    }
+
+    .menu__lang {
+        padding: 10px 0;
+    }
+
+    .nav__menu.scrolled {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .nav__menu {
+        background: #FCFCFC;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     }
 }
 

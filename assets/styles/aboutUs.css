@@ -97,3 +97,8 @@
 .section__about-us {
     margin-top: 50px !important;
 }
+
+.nav__menu {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+}

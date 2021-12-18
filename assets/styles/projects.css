@@ -121,6 +121,10 @@
     padding: 0 !important;
 }
 
+.nav__menu {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+}
 @media screen and (max-width: 576px) {
     .modal-body {
         height: inherit;
@@ -135,8 +139,5 @@
     }
     button.slick-arrow:not(:hover) {
         background-size: 10px !important;
-    }
-    .section__load__additional {
-        font-size: 13px;
     }
 }

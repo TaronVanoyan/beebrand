@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const navMenuItem = $('.nav__menu');
+    const navMenuItem = $('.nav__menu__scroll');
 
     $('.section__partners__slide').slick({
         slidesToShow: 4,
@@ -39,10 +39,11 @@ $(document).ready(function () {
         $('body').css('overflow', 'inherit');
     });
 
-    $('.mobile__menu__icon').on('click', function () {
-        $('.menu').toggleClass('mobile__menu');
-        $('.menu__container').toggleClass('active');
-        navMenuItem.removeClass('scrolled');
+    $('.toggleMobileMenu').on('click', function () {
+        $('body').toggleClass('no-scroll');
+        $('.menu__container').fadeToggle();
+        $('.nav__menu').toggleClass('opened_menu');
+        // navMenuItem.removeClass('scrolled');
     })
 
     $('.section__services__item').on('click', function (elem) {
@@ -174,6 +175,10 @@ $(document).ready(function () {
             navMenuItem.addClass('scrolled').removeClass('scroll');
             isNotTop = true
         }
+    });
+
+    $(document).on('click', '.project__slide__item', function () {
+        $('.modal__slider')[0].slick.setPosition();
     });
 });
 
