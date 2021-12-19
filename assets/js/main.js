@@ -168,10 +168,10 @@ $(document).ready(function () {
     }
 
     $(window).scroll(function () {
-        if (isNotTop && $(window).scrollTop() !== 0) {
+        if (isNotTop && $(window).scrollTop() >= ($('#first_section').position().top + $('#first_section').height())) {
             navMenuItem.removeClass('scrolled').addClass('scroll');
             isNotTop = false
-        } else if ($(window).scrollTop() === 0) {
+        } else if ($(window).scrollTop() < ($('#first_section').position().top + $('#first_section').height())) {
             navMenuItem.addClass('scrolled').removeClass('scroll');
             isNotTop = true
         }

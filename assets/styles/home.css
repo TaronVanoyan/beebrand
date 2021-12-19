@@ -1,0 +1,30 @@
+.container {
+    padding-top: 0;
+}
+
+.nav__menu.scroll {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+}
+
+.menu__content {
+    padding: 10px 0;
+}
+
+@media screen and (min-width: 769px) {
+    .menu__item, .menu__lang__selected {
+        color: #ffffff;
+    }
+    .menu__lang__selected:after {
+        border-color: #ffffff transparent transparent transparent;
+    }
+
+    .nav__menu.scroll .menu__lang__selected:after {
+        border-color: #000000 transparent transparent transparent;
+    }
+
+    .nav__menu.scroll .menu__item,
+    .nav__menu.scroll .menu__lang__selected {
+        color: #000000;
+    }
+}

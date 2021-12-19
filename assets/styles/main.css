@@ -144,8 +144,8 @@ a:hover {
 }
 
 .menu__lang {
-    text-align: right;
     position: relative;
+    text-align: left;
 }
 
 .menu__lang:hover > .menu__lang__list {
@@ -154,16 +154,22 @@ a:hover {
 
 .menu__lang__selected, .lang__list__item {
     font-size: 15px;
-    line-height: 24px;
+    line-height: 25px;
     cursor: pointer;
     color: #000000;
     text-decoration: none;
 }
 
 .menu__lang__selected:after {
-    content: url("../images/icons/arrow-down.svg");
-    margin-left: 10px;
-    margin-top: -2px;
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 45%;
+    left: 40px;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #000000 transparent transparent transparent;
 }
 
 .menu__lang__list {
@@ -262,47 +268,54 @@ a:hover {
     height: 70%;
 }
 
-.logo__container {
-    text-align: center;
-    max-width: 460px;
-}
+/*.logo__container {*/
+/*    text-align: center;*/
+/*    max-width: 460px;*/
+/*}*/
 
-.logo__container__main {
-    width: 132px;
-    height: 139px;
-}
+/*.logo__container__main {*/
+/*    width: 132px;*/
+/*    height: 139px;*/
+/*}*/
 
-.top__section-left {
-    padding-top: 110px;
-}
+/*.top__section-left {*/
+/*    padding-top: 100px;*/
+/*}*/
 
 .main__title {
     font-family: MontserratRegular, sans-serif;
-    font-size: 3.5em;
-    line-height: 80px;
+    font-size: 30px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     margin-bottom: 0;
     max-width: 440px;
+    color: #ffffff;
+}
+
+.main__brand__name {
+    font-family: MontserratBold, sans-serif;
+    font-size: 45px;
+    color: #FFC837;
+    text-transform: uppercase;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .main__description {
     max-width: 495px;
     font-family: MontserratRegular, sans-serif;
-    font-size: 0.95em;
+    font-size: 18px;
     line-height: 22px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
     text-align: justify;
-    margin-top: 58px;
+    margin-top: 10px;
     margin-bottom: 0;
+    color: #ffffff;
 }
 
 .box__send-contact {
     width: calc(100% - 25px);
     max-width: 520px;
     height: 63px;
-    margin-top: 70px;
+    margin-top: 50px;
     box-sizing: border-box;
     position: relative;
 }
@@ -1517,4 +1530,23 @@ input[type='checkbox']:checked {
 
 .opened_menu > .mobile__menu__icon-close {
     display: block;
+}
+
+.desktop__bg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+#first_section {
+    align-items: center;
+    height: 100vh;
+}
+
+#services.row.section {
+    margin-top: 50px;
 }

@@ -20,10 +20,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    .main__title {
-        font-size: 43px;
-    }
-
     .section__description {
         font-size: 18px;
     }
@@ -193,8 +189,16 @@
         flex-direction: column-reverse;
     }
 
+    .menu__lang__selected:after {
+        border-color: #000000 transparent transparent transparent;
+    }
+
     .top__section-right {
         display: block;
+    }
+
+    .menu__lang__list {
+        top: 40px;
     }
 
     .top__section-right__buttons {
@@ -390,13 +394,6 @@
     }
 }
 
-@media screen and (min-width: 768px) {
-    .nav__menu {
-        background: #FCFCFC;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-    }
-}
-
 @media screen and (max-width: 876px) {
     #congratulations .modal-dialog {
         width: 90%;
@@ -502,13 +499,12 @@
         height: 100px;
     }
 
-    .top__section-left {
-        background: no-repeat url('../images/main__bg__image.png');
-        background-size: cover;
-        padding-bottom: 50px;
-        color: #ffffff;
-    }
-
+    /*.top__section-left {*/
+    /*    background: no-repeat url('../images/main__bg__image.png');*/
+    /*    background-size: cover;*/
+    /*    padding-bottom: 50px;*/
+    /*    color: #ffffff;*/
+    /*}*/
     .about__project__subtitle {
         font-size: 20px;
     }
@@ -542,6 +538,14 @@
     .section__project__slide > .slick-arrow {
         width: 35px;
         height: 35px;
+    }
+
+    .main__title {
+        font-size: 25px;
+    }
+
+    .main__brand__name {
+        font-size: 40px;
     }
 
     .cong__text__title {
