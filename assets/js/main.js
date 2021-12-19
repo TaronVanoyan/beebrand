@@ -24,6 +24,16 @@ $(document).ready(function () {
         arrows: true,
     });
 
+    $('.home__bg__slider').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        speed: 800,
+        autoplay: true,
+        adaptiveHeight: true,
+        cssEase: 'linear'
+    });
+
     $('.over-layer').on('click', function () {
         $('.full__screen').addClass('active');
         $('.top__video__close').css('display', 'block');

@@ -1532,14 +1532,9 @@ input[type='checkbox']:checked {
     display: block;
 }
 
-.desktop__bg {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.home__bg__slider-item {
     object-fit: cover;
+    margin: 0;
 }
 
 #first_section {
@@ -1549,4 +1544,18 @@ input[type='checkbox']:checked {
 
 #services.row.section {
     margin-top: 50px;
+}
+
+.home__bg__slider__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+}
+
+.home__bg__slider, .slick-list, .home__bg__slider-item, .slick-track {
+    height: 100%;
+    width: 100%;
 }
